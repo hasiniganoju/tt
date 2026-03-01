@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Professional Time Table Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Professional Time Table Creator</h1>
+
+    <div class="form-section">
+        <input type="text" id="subject" placeholder="Subject Name">
+        <input type="number" id="hours" placeholder="Hours per week">
+
+        <select id="category">
+            <option value="Academic">Academically</option>
+            <option value="Daily">Daily Living</option>
+        </select>
+
+        <button onclick="addSubject()">Add Subject</button>
+    </div>
+
+    <h3>Added Subjects</h3>
+    <div id="subjectList"></div>
+
+    <button class="generate-btn" onclick="generateTable()">Generate Timetable</button>
+
+    <div id="timetable"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
